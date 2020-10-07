@@ -5,6 +5,7 @@ module.exports = {
     description: `Isaac Tait's Gatsby Workshop Demo Site`,
     author: `@Isaac_Tait_83`,
     siteUrl: `https://www.mountaintopcoding.com`,
+    footer: `mountainTopCoding(🏔);`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

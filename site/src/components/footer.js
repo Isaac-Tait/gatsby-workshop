@@ -1,19 +1,34 @@
 import React from "react";
-import { Link } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function footer() {
+  const data = useStaticQuery(graphql`
+    query siteTitle {
+      site {
+        siteMetadata {
+          footer
+        }
+      }
+    }
+  `);
+
   return (
     <div>
       <div className="bg-white ">
         <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
-          <p className="">
-            <Link
-              to="/"
-              className="no-underline text-gray-700 hover:text-gray-500"
+          <div className="flex flex-row">
+            <p> Another&nbsp;</p>
+            <p
+              href="https://www.mountaintopcoding.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="no-underline text-gray-700 hover:text-red-500"
             >
-              &copy; SketchXConf 2020
-            </Link>
-          </p>
+              {" "}
+              {data.site.siteMetadata.footer}
+            </p>
+            <p>&nbsp;project</p>
+          </div>
 
           <p>
             <a
