@@ -6,7 +6,10 @@ import Banner from "../components/banner";
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
-  const NavLinks = [{ href: "/", name: "Home" }];
+  const NavLinks = [
+    { href: "/", name: "Home" },
+    { href: "/#schedule", name: "Schedule" },
+  ];
 
   const data = useStaticQuery(graphql`
     query {
