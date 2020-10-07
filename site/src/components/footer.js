@@ -18,7 +18,7 @@ export default function footer() {
         <nav className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
           <div className="flex flex-row">
             <p> Another&nbsp;</p>
-            <p
+            <a
               href="https://www.mountaintopcoding.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export default function footer() {
             >
               {" "}
               {data.site.siteMetadata.footer}
-            </p>
+            </a>
             <p>&nbsp;project</p>
           </div>
 
