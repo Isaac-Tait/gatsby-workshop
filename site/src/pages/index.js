@@ -6,11 +6,13 @@ import BareTree from "../images/bare-tree.svg";
 
 const Hero = () => (
   <div className="text-center">
-    <h1 className="text-5xl font-extrabold text-blue-500 leading-9 tracking-tight font-inter">
-      October 7th, 2020
+    <p className="text-5xl font-extrabold text-blue-500 leading-9 tracking-tight font-inter">
+      August 2nd, 2021
       <br />
-      Cyberspace
-    </h1>
+    </p>
+    <p className="mt-6 ml-24 text-5xl font-extrabold text-blue-500 leading-9 tracking-tight font-inter">
+      Boulder, Colorado
+    </p>
     <br />
     <div className="grid grid-cols-6 gap-4">
       <div className="col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-4 xl:col-span-4...">
