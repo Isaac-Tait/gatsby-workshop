@@ -2,9 +2,9 @@
 module.exports = {
   siteMetadata: {
     title: `SketchXConf 2020`,
-    description: `description`,
-    author: `@you`,
-    siteUrl: `https://monica.dev/gatsbyworkshop`,
+    description: `Isaac Tait's Gatsby Workshop Demo Site`,
+    author: `@Isaac_Tait_83`,
+    siteUrl: `https://www.mountaintopcoding.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
