@@ -6,6 +6,13 @@ module.exports = {
     author: `@Isaac_Tait_83`,
     siteUrl: `https://www.mountaintopcoding.com`,
     footer: `mountainTopCoding(🏔);`,
+    linkOne: "Tickets",
+    menuLinks: [
+      {
+        name: "Tickets",
+        link: "/ticket",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 import Logo from "../images/pencil-icon.png";
@@ -6,6 +6,22 @@ import Logo from "../images/pencil-icon.png";
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
   const NavLinks = [{ href: "/", name: "Home" }];
+
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          menuLinks {
+            name
+            link
+          }
+          linkOne
+        }
+      }
+    }
+  `);
+
+  const linkOne = data.site.siteMetadata.linkOne;
 
   return (
     <nav className="bg-white">
@@ -34,7 +50,7 @@ function Header({ siteTitle }) {
         <div
           className={`${
             isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto`}
+          } md:block md:items-center w-full md:w-auto`}
         >
           <div className="">
             {NavLinks &&
@@ -47,6 +63,9 @@ function Header({ siteTitle }) {
                   {node.name}
                 </Link>
               ))}
+            <ul>
+              <Link to="/ticket">{linkOne}</Link>
+            </ul>
           </div>
         </div>
       </div>
