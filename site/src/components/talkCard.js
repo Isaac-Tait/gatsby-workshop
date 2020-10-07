@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 
 export default function TalkCard({ talk }) {
-  const { name, title, time, avatar, description, fields = "" } = talk;
+  const { name, title, time, avatar, fields = "" } = talk;
   const { slug = "" } = fields;
 
   return (

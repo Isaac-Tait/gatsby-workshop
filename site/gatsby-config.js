@@ -7,10 +7,15 @@ module.exports = {
     siteUrl: `https://www.mountaintopcoding.com`,
     footer: `mountainTopCoding(🏔);`,
     linkOne: "Tickets",
+    linkTwo: "Speakers",
     menuLinks: [
       {
         name: "Tickets",
         link: "/ticket",
+      },
+      {
+        name: "Speakers",
+        link: "/speakers",
       },
     ],
   },

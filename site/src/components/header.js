@@ -20,12 +20,14 @@ function Header({ siteTitle }) {
             link
           }
           linkOne
+          linkTwo
         }
       }
     }
   `);
 
   const linkOne = data.site.siteMetadata.linkOne;
+  const linkTwo = data.site.siteMetadata.linkTwo;
 
   return (
     <div>
@@ -71,6 +73,9 @@ function Header({ siteTitle }) {
                 ))}
               <ul>
                 <Link to="/ticket">{linkOne}</Link>
+              </ul>
+              <ul>
+                <Link to="/speakers">{linkTwo}</Link>
               </ul>
             </div>
           </div>
