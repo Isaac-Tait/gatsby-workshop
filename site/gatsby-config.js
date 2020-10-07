@@ -1,7 +1,7 @@
 /*eslint no-template-curly-in-string:0*/
 module.exports = {
   siteMetadata: {
-    title: `SketchXConf 2020`,
+    title: `mountainTopCoding Conference 2021`,
     description: `Isaac Tait's Gatsby Workshop Demo Site`,
     author: `@Isaac_Tait_83`,
     siteUrl: `https://www.mountaintopcoding.com`,
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/images/pencil-icon.png`,
+        icon: `src/images/snow-mountain.svg`,
       },
     },
     `gatsby-plugin-postcss`,

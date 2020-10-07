@@ -1,7 +1,7 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
-import Logo from "../images/pencil-icon.png";
+import Logo from "../images/snow-mountain.png";
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
